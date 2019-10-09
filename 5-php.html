@@ -597,6 +597,38 @@
 					</p>
 				</section>
 				<section>
+					<h3>Đăng nhập/Đăng xuất</h3>
+					Lưu <strong>userId</strong> vào session sau khi kiểm tra mật khẩu
+					<pre><code class="php" style="word-wrap: break-word;" data-trim>
+										$_SESSION['userId'] = $user['id'];
+									</code></pre>
+					Xóa <strong>userId</strong> khi người dùng muốn đăng xuất
+					<pre><code class="php" style="word-wrap: break-word;" data-trim>
+										unset($_SESSION['userId']);
+									</code></pre>
+				</section>
+				<section>
+					<h3>Chuyển trang</h3>
+					Lưu ý, chỉ có thể chuyển trang trước khi xuất dữ liệu
+					<pre><code class="php" style="word-wrap: break-word;" data-trim>
+										header('Location: index.php');
+										exit();
+									</code></pre>
+				</section>
+				<section>
+					<h3>Bài tập về nhà - BTCN05</h3>
+					<ul>
+						<li>Viết trang Web bao gồm <strong>trang chủ</strong> (index.php), <strong>đăng ký</strong> (registrer.php),
+							<strong>đăng nhập</strong> (login.php) và <strong>đăng xuất</strong> (logout.php) sử dụng một giao diên chung bằng
+							Bootstrap theo mẫu slide tiếp theo</li>
+						<li>Upload lên host: <a href="https://n.khado.me">http(s)://somehost.com/BTCN05/index.php</a> (và các tập tin khác)
+						</li>
+						<li>Nộp url.txt (chứa link web), các tập tin PHP, CSS (nếu có)</li>
+						<li>Nộp bài trên Web môn học trước <strong>15/10/2019 09:00PM</strong></li>
+						<li>Tên file: <strong>MSSV-xx.zip/rar</strong>, xx điểm tự đánh giá 01-10. Ví dụ: 1515151-07.zip</li>
+					</ul>
+				</section>
+				<section>
 					<h3>Lập trình hướng đối tượng (1)</h3>
 					<p>
 						PHP hỗ trợ lập trình hướng đối tượng theo ý tưởng từ Java
@@ -712,35 +744,6 @@
 					<pre><code class="php" style="word-wrap: break-word;" data-trim>
 						password_verify($password, $hashPassword);
 					</code></pre>
-				</section>
-				<section>
-					<h3>Đăng nhập/Đăng xuất</h3>
-					Lưu <strong>userId</strong> vào session sau khi kiểm tra mật khẩu
-					<pre><code class="php" style="word-wrap: break-word;" data-trim>
-						$_SESSION['userId'] = $user['id'];
-					</code></pre>
-					Xóa <strong>userId</strong> khi người dùng muốn đăng xuất
-					<pre><code class="php" style="word-wrap: break-word;" data-trim>
-						unset($_SESSION['userId']);
-					</code></pre>
-				</section>
-				<section>
-					<h3>Chuyển trang</h3>
-					Lưu ý, chỉ có thể chuyển trang trước khi xuất dữ liệu
-					<pre><code class="php" style="word-wrap: break-word;" data-trim>
-						header('Location: index.php');
-						exit();
-					</code></pre>
-				</section>
-				<section>
-					<h3>Bài tập về nhà - BTCN05</h3>
-					<ul>
-						<li>Viết trang Web bao gồm <strong>trang chủ</strong> (index.php), <strong>đăng ký</strong> (registrer.php), <strong>đăng nhập</strong> (login.php) và <strong>đăng xuất</strong> (logout.php) sử dụng một giao diên chung bằng Bootstrap theo mẫu slide tiếp theo</li>
-						<li>Upload lên host: <a href="https://n.khado.me">http(s)://somehost.com/BTCN05/index.php</a> (và các tập tin khác)</li>
-						<li>Nộp url.txt (chứa link web), các tập tin PHP, CSS (nếu có)</li>
-						<li>Nộp bài trên Web môn học trước <strong>15/10/2019 09:00PM</strong></li>
-						<li>Tên file: <strong>MSSV-xx.zip/rar</strong>, xx điểm tự đánh giá 01-10. Ví dụ: 1515151-07.zip</li>
-					</ul>
 				</section>
 				<section>
 					<h3>Bài tập về nhà - BTCN06</h3>
