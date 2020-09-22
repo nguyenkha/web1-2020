@@ -1,8 +1,8 @@
-LẬP TRÌNH WEB 1 - 2017
+LẬP TRÌNH WEB 1 - 2020
 ======================
 
 * Giảng viên: Đỗ Nguyên Kha (<dnkha@fit.hcmus.edu.vn>)
 
-* Thời gian: Thứ hai, 03:10PM - 05:50PM 
+* Thời gian: Thứ tư, 07:00AM - 09:30AM 
 
-* Địa điểm: C43
+* Địa điểm: E403
